@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Faimiles */
+
+@font-face {
+  font-family: "AllrounderMonumentTest";
+  src: url("/fonts/AllrounderMonumentTest-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AllrounderMonumentTest";
+  src: url("/fonts/AllrounderMonumentTest-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AllrounderMonumentTest";
+  src: url("/fonts/AllrounderMonumentTest-Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Scroll Bar */
+
+/* Style the scroll track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #4caf50; /* Green color for the handle */
+  border-radius: 6px; /* Rounded edges */
+  /* border: 2px solid #ffffff; Add padding around the handle */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #e4e4e4; /* Light gray background */
+  /* border-radius: 6px; */
+}
+
+/* Hover effect for the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #388e3c; /* Darker green on hover */
+}
+
+/* Optional: Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar {
+    background: #212121;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #212121;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+  }
+}
+
+#parent-div {
+  z-index: 1;
+}
+
+.child-div {
+  z-index: 2;
+}
+
+.child-div:hover {
+  z-index: 0;
+}
+
+@layer utilities {
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
