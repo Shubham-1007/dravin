@@ -18,11 +18,7 @@ function HomeIntro() {
 
         <h2 className="text-5xl lg:text-7xl mb-10 font-allrounder font-normal capitalize">Firm Overview</h2>
         <p className="text-xl leading-9 mb-12">
-          At Dravin Capital, we redefine wealth management by delivering expert guidance across the Indian stock market,
-          derivatives, and global forex markets. With a vision to create long-term value and a disciplined approach to capital
-          preservation, we empower clients to thrive in a dynamic financial environment. Our strategies are built on deep market
-          insights, robust research, and a commitment to excellence, ensuring that every investment aligns with your unique
-          financial goals.
+        At Dravin, we specialize in generating superior risk-adjusted returns by leveraging cutting-edge research, proprietary strategies, and decades of collective expertise. Our mission is to preserve and grow capital across market cycles, empowering institutions, family offices, and accredited investors to achieve their long-term financial goals.
         </p>
         <Link href="/dashboard" className="flex items-center gap-6">
           <p className="font-semibold">More Details</p>

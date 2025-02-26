@@ -20,7 +20,7 @@ function Hero() {
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen text-white">
         <h1 className="text-5xl lg:text-7xl font-allrounder font-light leading-tight mt-10 px-5">
-          Technical & Derivatives<br /> Excellence
+        Delivering Alpha Through<br /> Disciplined Innovation
         </h1>
 
         {/* Lottie Animation */}
