@@ -6,6 +6,7 @@ import LogoSlider from "../Components/HomepageComponents/LogoSlider"
 import Hero from "@/Components/HomepageComponents/Hero";
 import HomeIntro from "@/Components/HomepageComponents/HomeIntro";
 import HomeInvestWithUs from "@/Components/HomepageComponents/HomeInvestWithUs";
+import Services from "./../Components/HomepageComponents/Services"
 
 
 
@@ -13,6 +14,30 @@ export default function Home() {
 
   const marqueeRef = useRef(null);
   const cloneRef = useRef(null);
+
+  const cardData = [
+    {
+      title: "Customized Risk & Profit Strategies",
+      imageSrc: "/1.jpg", // Replace with your actual image paths
+      subtext: "Our team provides tailored strategies according to clients' risk capacities and profit expectations."
+    },
+    {
+      title: "Automated Trading",
+      imageSrc: "/2.jpg", // Replace with your actual image paths
+      subtext: "We are able to deliver a consistent and high average return with our affiliated trading bot."
+    },
+    {
+      title: "Prop Shop",
+      imageSrc: "/3.jpg", // Replace with your actual image paths
+      subtext: "We support our clients through the evaluation phase of proprietary firms and other obstacles."
+    },
+    {
+      title: "Expertise Delivered",
+      imageSrc: "/4.jpg", // Replace with your actual image paths
+      subtext: "Our team offers customised strategies based on the risk tolerance and financial goals of our clients."
+    }
+  ];
+  
 
   useEffect(() => {
     const marquee = marqueeRef.current;
@@ -59,18 +84,18 @@ export default function Home() {
 
 
       {/* Section  4*/}
-      <div className="w-full min-h-screen flex justify-center items-center py-20 bg-black">
+      {/* <div className="w-full min-h-screen flex justify-center items-center py-20 bg-black">
         <div className="max-w-screen-xl mx-auto flex-col md:flex-row flex gap-12 relative px-5">
-          {/* Left Side - Fixed Text */}
+          
           <div className=" text-center md:text-left basis-1/2 md:sticky top-[22%] h-[50vh] ">
             <h2 className="text-5xl lg:text-6xl text-white mb-8 font-allrounder font-normal leading-tight  ">Our Unique Services</h2>
             <p className="text-gray-300 text-lg lg:pr-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet inventore, ratione cum eligendi similique architecto. Consequuntur aliquid nemo distinctio assumenda hic ullam a, placeat est eligendi recusandae. Adipisci, velit! Omnis sequi ullam debitis, perspiciatis natus, enim aspernatur repellat quod ab maiores aperiam deleniti non magni dicta sint eius optio.</p>
           </div>
 
-          {/* Right Side - Scrollable Cards */}
+          
           <div className="basis-1/2 relative overflow-hidden">
             <div className="lg:h-[200vh] grid grid-cols-2 lg:flex lg:flex-col gap-8">
-              {/* 4 Cards */}
+              
               {[1, 2, 3, 4].map((item, index) => (
                 <div
                   key={index}
@@ -82,20 +107,71 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+      {/* <Services /> */}
+      
+
+      <div className="w-full min-h-screen flex justify-center items-center py-20 bg-black">
+  <div className="max-w-screen-xl mx-auto flex-col md:flex-row flex gap-12 relative px-5">
+    
+    {/* Left Side - Static Content */}
+    <div className="text-center md:text-left basis-1/2 md:sticky top-[22%] h-[50vh]">
+      <h2 className="text-5xl lg:text-6xl text-white mb-8 font-allrounder font-normal leading-tight">
+        Our Unique Services
+      </h2>
+      <p className="text-gray-300 text-lg lg:pr-32">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet inventore, ratione cum eligendi similique architecto. Consequuntur aliquid nemo distinctio assumenda hic ullam a, placeat est eligendi recusandae. Adipisci, velit! Omnis sequi ullam debitis, perspiciatis natus, enim aspernatur repellat quod ab maiores aperiam deleniti non magni dicta sint eius optio.
+      </p>
+    </div>
+
+    {/* Right Side - Cards with Image, Title, Sub-text, and Button */}
+    <div className="basis-1/2 relative overflow-hidden">
+      <div className="lg:h-[145vh] grid grid-cols-2 lg:flex lg:flex-col gap-8 text-white">
+        
+        {/* Loop through cardData to render each card */}
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className=" flex justify-center bg-[#0c0c0c] border shadow-md rounded-xl" 
+          >
+            
+
+            {/* Image at the top of each card */}
+            <img
+              src={card.imageSrc} // Dynamically set image source
+              alt={`Image for ${card.title}`}
+              className="w-full object-cover rounded-xl max-w-[190px]"
+            />
+            
+            {/* Card Content: Title, Sub-text, and Button */}
+            <div className="p-6">
+              <h3 className="text-3xl font-semibold mb-4">{card.title}</h3>
+              <p className="text-lg mb-4">{card.subtext}</p>
+              <button className="bg-white text-black px-6 py-2 rounded-md font-medium">
+                Learn More
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
 
       {/* Section  */}
 
-      <div className=" py-24 bg-[#f5f4fd]">
+      {/* <div className=" py-24 bg-[#f5f4fd]">
         <div className="max-w-screen-xl mx-auto">
           <h3 className="text-4xl text-center font-allrounder font-normal">Trusted Over +1200 Clients in The World</h3>
           <LogoSlider />
 
         </div>
-      </div>
+      </div> */}
 
 
 
