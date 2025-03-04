@@ -126,7 +126,7 @@ export default function Home() {
 
     {/* Right Side - Cards with Image, Title, Sub-text, and Button */}
     <div className="basis-1/2 relative overflow-hidden">
-      <div className="lg:h-[145vh] grid grid-cols-2 lg:flex lg:flex-col gap-8 text-white">
+      <div className="lg:h-[145vh] grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col gap-8 text-white">
         
         {/* Loop through cardData to render each card */}
         {cardData.map((card, index) => (
@@ -140,7 +140,7 @@ export default function Home() {
             <img
               src={card.imageSrc} // Dynamically set image source
               alt={`Image for ${card.title}`}
-              className="w-full object-cover rounded-xl max-w-[190px]"
+              className="w-full object-cover rounded-xl max-w-[190px] "
             />
             
             {/* Card Content: Title, Sub-text, and Button */}
@@ -179,7 +179,7 @@ export default function Home() {
 
       {/* Section */}
 
-      <div className="w-full py-20 px-5">
+      {/* <div className="w-full py-20 px-5">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex">
             <div className="w-full md:basis-3/4">
@@ -244,7 +244,7 @@ export default function Home() {
 
         </div>
 
-      </div>
+      </div> */}
 
       {/* Section */}
 

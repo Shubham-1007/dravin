@@ -67,10 +67,10 @@ function Footer() {
         <div className='max-w-screen-xl mx-auto flex-col md:flex-row flex gap-20 px-5'>
           <div className='basis-5/12'>
             <p className='text-2xl mb-8'>
-              Hello, I’m David Matias, Website & User Interface Designer based in London.
+            A Global Hedge Fund Partnering with Visionary Investors to Navigate Complex Markets
             </p>
-            <Link href='' className='text-2xl underline underline-offset-8'>
-              davidmatias333@gmail.com
+            <Link href='mailto:thedravinindia@gmail.com' className='text-2xl underline underline-offset-8'>
+              thedravinindia@gmail.com
             </Link>
           </div>
 

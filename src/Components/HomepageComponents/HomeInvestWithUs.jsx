@@ -103,7 +103,7 @@ function HomeInvestWithUs() {
 
   return (
     <div className="w-full py-16">
-      <div className="text-center max-w-screen-xl mx-auto mb-12">
+      <div className="text-center max-w-screen-xl mx-auto mb-12 px-5">
         <h3 className="text-5xl mb-6 font-allrounder font-normal">
           Investment Strategies
         </h3>
@@ -113,7 +113,7 @@ function HomeInvestWithUs() {
       </div>
 
       {/* Cards Section */}
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 ">
         {cards.map((card, index) => (
           <div key={index} className="relative w-full h-96 group perspective-1000">
             <div className="relative w-full h-full transform-style-3d transition-transform duration-700 group-hover:rotate-y-180">
