@@ -132,7 +132,7 @@ export default function Home() {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className=" flex justify-center bg-[#0c0c0c] border shadow-md rounded-xl" 
+            className=" md:flex justify-center bg-[#0c0c0c] border shadow-md rounded-xl" 
           >
             
 
@@ -140,7 +140,7 @@ export default function Home() {
             <img
               src={card.imageSrc} // Dynamically set image source
               alt={`Image for ${card.title}`}
-              className="w-full object-cover rounded-xl max-w-[190px] "
+              className="w-full object-cover rounded-xl md:max-w-[190px] "
             />
             
             {/* Card Content: Title, Sub-text, and Button */}
