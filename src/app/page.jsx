@@ -252,20 +252,20 @@ export default function Home() {
         <div className="flex whitespace-nowrap">
           {/* Main Marquee */}
           <div className="flex justify-around w-full" ref={marqueeRef}>
-            <span className="text-3xl lg:text-6xl text-white font-bold ">
+            <span className="text-2xl lg:text-6xl text-white font-bold ">
               Investments & Finance &nbsp; ● &nbsp;
             </span>
-            <span className="text-3xl lg:text-6xl text-white font-bold ">
+            <span className="text-2xl lg:text-6xl text-white font-bold ">
               Portfolio Management &nbsp; ● &nbsp;
             </span>
           </div>
 
           {/* Cloned Marquee for Seamless Looping */}
-          <div className="flex absolute left-full w-full justify-around  " ref={cloneRef}>
-            <span className="text-3xl lg:text-6xl text-white font-bold ">
+          <div className="flex absolute left-[160%] md:left-full w-full justify-around  " ref={cloneRef}>
+            <span className="text-2xl lg:text-6xl text-white font-bold ">
               Investments & Finance &nbsp; ● &nbsp;
             </span>
-            <span className="text-3xl lg:text-6xl text-white font-bold">
+            <span className="text-2xl lg:text-6xl text-white font-bold">
               Investments & Finance &nbsp; ● &nbsp;
             </span>
           </div>
