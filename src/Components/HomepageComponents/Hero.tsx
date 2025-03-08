@@ -20,7 +20,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen text-white">
-        <h1 className="text-5xl lg:text-8xl font-allrounder font-light leading-tight mt-16 px-5 mb-7">
+        <h1 className="text-5xl lg:text-7xl font-allrounder font-light leading-tight mt-16 px-5 mb-7">
         Redefining Financial<br /> Freedom
         </h1>
         <p className="text-xl mb-8">For your risk-takers ready to build wealth</p>
