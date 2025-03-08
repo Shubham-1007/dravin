@@ -120,7 +120,7 @@ export default function Home() {
         Our Unique Services
       </h2>
       <p className="text-gray-300 text-lg lg:pr-32">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet inventore, ratione cum eligendi similique architecto. Consequuntur aliquid nemo distinctio assumenda hic ullam a, placeat est eligendi recusandae. Adipisci, velit! Omnis sequi ullam debitis, perspiciatis natus, enim aspernatur repellat quod ab maiores aperiam deleniti non magni dicta sint eius optio.
+        At Dravin, we deliver institutional-grade investment solutions designed to protect capital and generate uncorrelated returns across market cycles. Built on decades of proven expertise, our strategies—including long/short equity, global macro, and quantitative approaches—leverage rigorous research, advanced analytics, and dynamic risk management to seize opportunities with precision. We specialize in bespoke portfolios for high-net-worth individuals, family offices, and institutions, aligning every decision with your risk parameters and long-term ambitions. Transparency drives our process; innovation fuels our edge. Trusted for disciplined execution and a technology-driven advantage, we exist to compound wealth, not follow trends. Partner with precision. Partner with conviction. Partner with Dravin.
       </p>
     </div>
 
