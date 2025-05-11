@@ -54,13 +54,13 @@
 /* Optional: Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
   ::-webkit-scrollbar {
-    background: #212121;
+    background: #04050a;
   }
   ::-webkit-scrollbar-thumb {
-    background: #212121;
+    background: #04050a;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #212121;
+    background: #04050a;
   }
 }
 
@@ -88,3 +88,9 @@
   }
 }
 
+html{
+  background: #111828;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}

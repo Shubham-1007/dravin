@@ -1,39 +1,30 @@
 import Link from "next/link";
 import React from "react";
-// import { Player } from "@lottiefiles/react-lottie-player";
-// import animationData from "./../../../public/mouse-animation.json"; // Use the converted JSON file
 
 function Hero() {
   return (
-    <div className="relative w-full min-h-screen bg-black">
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="absolute inset-0 bg-black/50"></div>
-
-      <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen text-white">
-        <h1 className="text-5xl lg:text-7xl font-allrounder font-light leading-tight mt-16 px-5 mb-7">
-        Redefining Financial<br /> Freedom
-        </h1>
-        <p className="text-xl mb-8">For your risk-takers ready to build wealth</p>
-        <Link  className="bg-white px-8 py-3 text-black rounded-full" href="www.google.com">Know More</Link>
-        {/* Lottie Animation */}
-        <div className="absolute bottom-20">
-          {/* <Player
-            autoplay
-            loop
-            src={animationData}  // Load JSON animation file
-            style={{ height: "50px", width: "50px" }}
-          /> */}
+    <div className="w-full bg-gradient-to-br from-[#1b2232] to-[#0d1017] pt-48 pb-24">
+      <div className="grid grid-cols-2 gap-10 max-w-screen-xl mx-auto px-8 h-full items-center justify-center">
+        <div className="text-white h-full">
+          <h1 className="text-6xl font-bold mb-2">Trade Forex your Way:</h1>
+            <h1 className="text-6xl font-bold pb-8 bg-gradient-to-r from-purple-400 to-purple-800 text-transparent bg-clip-text">
+            Learn or Earn Passively.
+            </h1>
+          <p className="mb-8">Master trading in 90 Days - or let us grow your money while you sleep.</p>
+          <div className="flex gap-5 mb-6">
+            <Link
+              href="/learn"
+              className="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-4 py-2 rounded"
+            >
+              Free Beginner&apos;s Guide
+            </Link>
+            <Link href="/earn" className="border-2 border-purple-700 text-white px-4 py-2 rounded">
+              Start Managed Account
+            </Link>
+          </div>
+              <p>Join <span className="font-bold text-purple-500">4000+</span> Traders who started this Month.</p>
         </div>
+        <div></div>
       </div>
     </div>
   );
